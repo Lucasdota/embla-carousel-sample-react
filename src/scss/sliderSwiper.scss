@@ -1,0 +1,46 @@
+.embla {
+  position: relative;
+	display: flex;
+	align-items: center;
+	max-width: 48rem;
+}
+.embla__viewport {
+	overflow: hidden;
+}
+.embla__container {
+	display: flex;
+  margin-left: calc(2rem * -1);
+}
+.embla__slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 50%;
+  min-width: 0;
+	width: 10rem;
+}
+
+.embla__slide__number {
+	margin-left: 2rem;
+  border-radius: 1.8rem;
+  font-size: 3rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25rem;
+  user-select: none;
+	background-color: black;
+	border: 2px solid white;
+	cursor: grab;
+	&:active {
+		cursor: grabbing;
+	}
+}
+
+.embla__prev {
+  position: absolute;
+	left: -49px;
+}
+.embla__next {
+	position: absolute;
+	right: -50px;
+}
